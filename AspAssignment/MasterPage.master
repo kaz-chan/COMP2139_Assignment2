@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="http://fonts.googleapis.com/css?family=Raleway:400,200,500,600,700,800,300" rel="stylesheet" />
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <table class="auto-style1">
+                <tr >
+                    <td>
+                        <asp:Label ID="lblNavHome" runat="server" Text="Home"></asp:Label>
+                    </td>
+                    <td>
+                        <asp:Label ID="lblNavCustomers" runat="server" Text="Customers"></asp:Label>
+                    </td>
+                    <td>
+                        <asp:Label ID="lblNavSurvays" runat="server" Text="Survays"></asp:Label>
+                    </td>
+                    <td>
+                        <asp:Label ID="lblNavMaintenance" runat="server" Text="Maintenance"></asp:Label>
+                    </td>
+                    <td>
+                        <asp:Label ID="lblNavContact" runat="server" Text="Contact"></asp:Label>
+                    </td>
+                </tr>
+            </table>
+        </nav>
+        <section>
+            <asp:Label ID="lblPageName" runat="server" Text=""></asp:Label>
+        </section>
+    </header>
+        
+    <form id="form1" runat="server">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </form>
+    <footer>
+        <section>
+            <p>&copy;2016 - COMP2139 - SportsPro V2.0</p>
+        </section>
+    </footer>
+</body>
+</html>
