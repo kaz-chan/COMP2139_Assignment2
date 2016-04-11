@@ -8,7 +8,6 @@ using System.Web;
 /// </summary>
 public class CustomerList
 {
-
     private static List<Customer> customer = null;
 
     public CustomerList()
@@ -46,13 +45,12 @@ public class CustomerList
         customer.Add(c);
     }
 
-    public void removeat(int index)
+    public void RemoveAt(int index)
     {
         customer.RemoveAt(index);
     }
 
-    public void clear()
-    {
-        customer.Clear();
-    }
-}
+    public void Clear() { customer.Clear(); }
+
+    public int Count() { return customer.Count();}
+}   
