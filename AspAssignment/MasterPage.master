@@ -31,12 +31,7 @@
                         <asp:Label ID="lblNavSurvays" runat="server" Text="Survays"></asp:Label>
                     </td>
                     <td>
-                        <asp:Label ID="lblNavMaintenance" runat="server" Text="Maintenance"></asp:Label><asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" OnMenuItemClick="Menu1_MenuItemClick">
-                            <DataBindings>
-                                <asp:MenuItemBinding DataMember="SiteMapNode" Depth="5" />
-                            </DataBindings>
-                        </asp:Menu>
-                        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+                            
                     </td>
                     <td>
                         <asp:Label ID="lblNavContact" runat="server" Text="Contact"></asp:Label>
