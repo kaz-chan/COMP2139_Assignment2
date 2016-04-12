@@ -8,6 +8,8 @@
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
     <link href="http://fonts.googleapis.com/css?family=Raleway:400,200,500,600,700,800,300" rel="stylesheet" />
+    <link href="Styles/default.css" rel="stylesheet" />
+    <link href="Styles/fonts.css" rel="stylesheet" />
     <style type="text/css">
         .auto-style1 {
             width: 100%;
@@ -17,29 +19,26 @@
 <body>
         
     <form id="form1" runat="server">
-    <header>
-        <nav>
-            <table class="auto-style1">
-                <tr >
-                    <td>
-                        <asp:Label ID="lblNavHome" runat="server" Text="Home"></asp:Label>
-                    </td>
-                    <td>
-                        <asp:Label ID="lblNavCustomers" runat="server" Text="Customers"></asp:Label>
-                    </td>
-                    <td>
-                        <asp:Label ID="lblNavSurvays" runat="server" Text="Survays"></asp:Label>
-                    </td>
-                    <td>
-                            
-                    </td>
-                    <td>
-                        <asp:Label ID="lblNavContact" runat="server" Text="Contact"></asp:Label>
-                    </td>
-                </tr>
-            </table>
+    <header id="wrapper">
+        <nav id="menu-wrapper">
+            <ul id="menu" class="container">
+                <li>
+                    <asp:Label ID="lblNavHome" runat="server" Text="Home"></asp:Label>
+                </li>
+                <li>
+                    <asp:Label ID="lblNavCustomers" runat="server" Text="Customers"></asp:Label>
+                </li>
+                <li>
+                    <asp:Label ID="lblNavSurvays" runat="server" Text="Survays"></asp:Label>
+                </li>
+                <li>
+                    <asp:Label ID="lblNavContact" runat="server" Text="Contact"></asp:Label>
+                </li>
+                <li>
+                </li>
+            </ul>
         </nav>
-        <section>
+        <section id="header-wrapper>
             <asp:Label ID="lblPageName" runat="server" Text=""></asp:Label>
         </section>
     </header>
